@@ -32,7 +32,13 @@ h1 {
     margin: 10px;
 }
 
-.tom-cat-image:hover {
+.cat-image {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cat-image:hover {
   cursor: pointer;
 }
 
