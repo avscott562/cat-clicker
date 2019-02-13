@@ -1,6 +1,7 @@
 let tclick = document.querySelector('.tclick');
 let fclick = document.querySelector('.fclick');
 let cats = document.querySelectorAll('.cat-image');
+let catClicked;
 let clickCount = 0;
 let tomCount = 0;
 let felixCount = 0;
@@ -21,10 +22,20 @@ restart.addEventListener('click', function() {
 });
 
 function clicker() {
-  clickCount++;
-  if (clickCount === 1) {
-    fclick.innerHTML = clickCount + " Click";
-  } else {
-    fclick.innerHTML = clickCount + " Clicks";
+  if(this.classList.contains('tom')) {
+    tomCount++
+    if (tomCount === 1) {
+      tclick.innerHTML = tomCount + " Click";
+    } else {
+      tclick.innerHTML = tomCount + " Clicks";
+    };
+  };
+  if(this.classList.contains('felix')) {
+    felixCount++
+    if (felixCount === 1) {
+      fclick.innerHTML = felixCount + " Click";
+    } else {
+      fclick.innerHTML = felixCount + " Clicks";
+    };
   };
 };

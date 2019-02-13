@@ -40,6 +40,11 @@ h1 {
   display: inline-flex;
 }
 
+.cat-name {
+  color: #ff8abb;
+  font-size: 1.75em;
+}
+
 .cat-image {
   width: 200px;
   margin: 10px;
