@@ -18,18 +18,26 @@ body {
     font-family: 'Coda', cursive;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     padding: 10px;
     margin: 10px;
+}
+
+.main {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-container {
+  max-width: 70%;
+  margin: auto;
+  padding: 10px;
+  display: inline-flex;
 }
 
 .cat-image {
@@ -40,6 +48,14 @@ h1 {
 
 .cat-image:hover {
   cursor: pointer;
+}
+
+.first-cat {
+  order: 1;
+}
+
+.second-cat {
+  order: 2;
 }
 
 .click-counter {
